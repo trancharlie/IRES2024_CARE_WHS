@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+mednextv1.egg-info/PKG-INFO
+mednextv1.egg-info/SOURCES.txt
+mednextv1.egg-info/dependency_links.txt
+mednextv1.egg-info/entry_points.txt
+mednextv1.egg-info/requires.txt
+mednextv1.egg-info/top_level.txt
