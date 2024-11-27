@@ -36,7 +36,7 @@ The entire prediction scripture should contain the following lines.
 3. The ensembling code averages and completes the postprocessing (a small modification to the original ensembling to allow pairs and triple ensembles).
 4. The script ``final_format'' changes the segmentation labels from [0,1,2, ....] into the CARE2024 specified format of pixel values [LV = 500, RV = 600, LA = 420, ....] and changes the output names from nnUNet-style into a specified format `Case####_pred.nii.gz".
 
-**A sample is provided from a CT-Cardio-Sequence from 3D Slicer renamed as Case9000_image.nii.gz. It has no significance other than testing if the script works as the CARE dataset requires a signed agreement before use of their data. **
+**A sample is provided from a CT-Cardio-Sequence from 3D Slicer renamed as Case9000_image.nii.gz. It has no significance other than testing if the script works as the CARE dataset requires a signed agreement before use of their data.**
 
 ```
 python rename_images_nnunet_format.py
