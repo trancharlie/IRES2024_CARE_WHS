@@ -14,10 +14,6 @@ A precise training code is not provided at the moment but can be relatively easi
 
 Precise training code is not provided at the moment but can be relatively easily reproduced with familiarity with nnUNet's coding principles (e.g., setting environment variables, following data naming conventions, etc.).
 
-## References
-1. [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt)  
-2. [nnUNet-v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1)  
-3. [DOMINO++](https://github.com/lab-smile/DOMINOPlusPlus)  
 
 ## Submitted Model Components
 Our submitted model included an ensemble of the following:
