@@ -82,6 +82,6 @@ pip install monai==1.1.0
 
 ## Contact Information
 
-You may contact me at [charlietran@ufl.edu] for any questions or information.
+You may contact me at charlietran@ufl.edu for any questions or information.
 
 
