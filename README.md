@@ -27,7 +27,7 @@ Our submitted model included an ensemble of the following:
 
 ## Tested models directory
 
-Download the models from this link
+Download the models from this link [(DOWNLOAD LINK](https://uflorida-my.sharepoint.com/:f:/g/personal/charlietran_ufl_edu/Epzq9x5BWXBBqXo-8nSgB2UBLCKcVO-brofrIiApuBushQ?e=Lu8b1F). There is one for each model.
 
 ## Testing Script 
 
