@@ -23,7 +23,7 @@ Download the models from this link
 
 The order of prediction goes as follows
 
-`` python rename_images_nnunet_format.py
+``` python rename_images_nnunet_format.py
 
 mednextv1_predict -i ../intermediate/image_nnunet_format/ -o ../intermediate/test_pred/3d_M/ -tr nnUNetTrainerV2_MedNeXt_M_kernel3 -m 3d_M -p nnUNetPlansv2.1_trgSp_1x1x1 -t 800 --save_npz
 
@@ -33,5 +33,5 @@ mednextv1_predict -i ../intermediate/image_nnunet_format/ -o ../intermediate/tes
 
 mednextv1_ensemble -f "../intermediate/test_pred/3d_M/" "../intermediate/test_pred/3d_M_DA5/" "../intermediate/test_pred/3d_M_DOMINO/" -o "..//intermediate/test_pred/ENSEMBLE/" -pp "./nnUNet_trained_models/nnUNet/ensembles/Task800_MedNXT/ensemble_3d_M__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1--3d_M_DA5__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1--3d_M_DOMINO__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/postprocessing.json" --npz
 
-python final_format.py ''
+python final_format.py '''
 
