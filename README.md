@@ -10,10 +10,24 @@ A precise training code is not provided at the moment but can be relatively easi
 [2, nnUNet-v1] https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1 \\
 [3, DOMINO++] https://github.com/lab-smile/DOMINOPlusPlus \\
 
-Our submitted model contained an ensemble of 
-[1] A standard MedNext-M-k3 model
-[2] A MedNeXt-M-k3 model with DA5 augmentation
-[3] A MedNeXt-M-k3 model with DOMINO++ loss (https://github.com/lab-smile/DOMINOPlusPlus). This can re-implemented by adding the DOMINO++ loss into the MedNeXt/nnUNEt Trainer. By necessity, you need to train a standard MedNeXt-M-k3 model, and obtain its ouput confusion matrix and ``invert it'' to utilize DOMINO++. 
+# Training Code (Future Plans)
+
+Precise training code is not provided at the moment but can be relatively easily reproduced with familiarity with nnUNet's coding principles (e.g., setting environment variables, following data naming conventions, etc.).
+
+## References
+1. [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt)  
+2. [nnUNet-v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1)  
+3. [DOMINO++](https://github.com/lab-smile/DOMINOPlusPlus)  
+
+## Submitted Model Components
+Our submitted model included an ensemble of the following:
+
+1. A standard **MedNeXt-M-k3** model.
+2. A **MedNeXt-M-k3** model with **DA5 augmentation**.
+   - You can find the source code of the DA5 from the nnUNet github ([DA5](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1/nnunet/training/network_training/nnUNet_variants/data_augmentation)).
+3. A **MedNeXt-M-k3** model with **DOMINO++ loss** ([DOMINO++ GitHub](https://github.com/lab-smile/DOMINOPlusPlus)):  
+   - This can be re-implemented by incorporating the DOMINO++ loss into the MedNeXt/nnUNet trainer.  
+   - To achieve this, train a standard **MedNeXt-M-k3** model, obtain its output confusion matrix, and "invert" it to utilize DOMINO++ effectively.
 
 ## Tested models directory
 
