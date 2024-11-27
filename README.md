@@ -48,9 +48,35 @@ mednextv1_predict -i ../intermediate/image_nnunet_format/ -o ../intermediate/tes
 
 mednextv1_ensemble -f "../intermediate/test_pred/3d_M/" "../intermediate/test_pred/3d_M_DA5/" "../intermediate/test_pred/3d_M_DOMINO/" -o "..//intermediate/test_pred/ENSEMBLE/" -pp "./nnUNet_trained_models/nnUNet/ensembles/Task800_MedNXT/ensemble_3d_M__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1--3d_M_DA5__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1--3d_M_DOMINO__nnUNetTrainerV2_MedNeXt_kernel3__nnUNetPlansv2.1_trgSp_1x1x1/postprocessing.json" --npz
 
-python final_format.py '''
+python final_format.py
+```
 
-## Additional information for repo
+## Additional information for reproduction
 
+Remember in nnUNet you need to set the environment variables inside your .bashrc file (I forget if this is technically required for testing, but it is definitely required for training). 
+
+export nnUNet_raw_data_base="PATH_TO_YOUR_MEDNEXT/nnUNet_raw_data_base"
+export nnUNet_preprocessed="PATH_TO_YOUR_MEDNEXT/nnUNet_preprocessed"
+export RESULTS_FOLDER="PATH_TO_YOUR_MEDNEXT/nnUNet_trained_models"
+
+Update it by 
+```
+source /home/username/.bashrc
+```
+You can verify if what you did was right by typing in terminal
+```
+echo $nnUNet_raw_data_base
+```
+
+### Other packages I may have used in the progression
+May possibly be others that you need to install on the fly. The most imporant packages were installed above and usually other packages don't conflict so these should install easily.
+```
+pip install nibabel
+pip install seaborn
+pip install jupyter 
+pip install scikit-learn
+pip install cupy-cuda12x
+pip install monai==1.1.0
+```
 
 
