@@ -30,12 +30,13 @@ Our submitted model included an ensemble of the following:
 Download the models from this microsoft onedrive link [(DOWNLOAD LINK)](https://uflorida-my.sharepoint.com/:f:/g/personal/charlietran_ufl_edu/Epzq9x5BWXBBqXo-8nSgB2UBLCKcVO-brofrIiApuBushQ?e=Lu8b1F). There is one for each model.
 
 ## Testing Script 
-
 The entire prediction scripture should contain the following lines. 
 1. The rename_images_nnunet_format takes input from the directory '../input/' and expects the data to be named "Case####_image.nii.gz" and converts this into an nnUNet-style name into the '../intermediate/image_nnunet_format/" directory with name Case_1021_0000.nii.gz where 0000 is the modality index (in the care challenge, as subjects do not have both CT and MRI, both are considered a single modality for z-score normalization).
 2. The mednext_v1_predict lines are run with the --save_npz flag to save the probabiliies, and are ensembled (if this repo is uploaded as intended, it should work on its own in this repo. I think the original nnUNet / mednext requires a small modification to the prediction script because it expects the prediction to be on the same machine as it was trained).
 3. The ensembling code averages and completes the postprocessing (a small modification to the original ensembling to allow pairs and triple ensembles).
-4. The script ``final_format'' changes the segmentation labels from [0,1,2, ....] into the CARE2024 specified format of pixel values [LV = 500, RV = 600, LA = 420, ....] and changes the output names from nnUNet-style into a specified format `Case####_pred.nii.gz". 
+4. The script ``final_format'' changes the segmentation labels from [0,1,2, ....] into the CARE2024 specified format of pixel values [LV = 500, RV = 600, LA = 420, ....] and changes the output names from nnUNet-style into a specified format `Case####_pred.nii.gz".
+
+**A sample is provided from a CT-Cardio-Sequence from 3D Slicer renamed as Case9000_image.nii.gz. It has no significance other than testing if the script works as the CARE dataset requires a signed agreement before use of their data. **
 
 ```
 python rename_images_nnunet_format.py
