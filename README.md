@@ -4,11 +4,11 @@ We provide the testing scripts and trained models used for the CARE2024 challeng
 
 ## Training code (possibly future to do)
 
-A precise training code is not provided at the moment but can be relatively easily reproduced by familiarity with nnUNet's coding (setting environmental variables, data naming format, etc.). 
+A precise training code is not provided at the moment but can be relatively easily reproduced by familiarity with nnUNet's coding (setting environmental variables, data naming format, etc.). MedNeXt uses the nnUNet-v1 style convention. 
 
-[1, MedNext] https://github.com/MIC-DKFZ/MedNeXt \\ 
-[2, nnUNet-v1] https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1 \\
-[3, DOMINO++] https://github.com/lab-smile/DOMINOPlusPlus \\
+1. [MedNext](https://github.com/MIC-DKFZ/MedNeXt) 
+2. [nnUNet-v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1)
+3. [DOMINO++](https://github.com/lab-smile/DOMINOPlusPlus)
 
 # Training Code (Future Plans)
 
