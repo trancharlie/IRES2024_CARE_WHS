@@ -54,10 +54,11 @@ python final_format.py
 ## Additional information for reproduction
 
 Remember in nnUNet you need to set the environment variables inside your .bashrc file (I forget if this is technically required for testing, but it is definitely required for training). 
-
+```
 export nnUNet_raw_data_base="PATH_TO_YOUR_MEDNEXT/nnUNet_raw_data_base"
 export nnUNet_preprocessed="PATH_TO_YOUR_MEDNEXT/nnUNet_preprocessed"
 export RESULTS_FOLDER="PATH_TO_YOUR_MEDNEXT/nnUNet_trained_models"
+```
 
 Update it by 
 ```
